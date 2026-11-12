@@ -1,5 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
+using AvaloniaApplication1.Models;
 using AvaloniaApplication1.Services;
 using System;
 using System.Diagnostics;
@@ -26,16 +27,16 @@ public partial class MainWindow : Window
     {
         try
         {
-            var customer = new
+            var customer = new Customer
             {
-                id = "1",
-                name = "John",
-                category = "general"
+                Name = "John",
+                Email = "john@example.com",
+                Age = 30,
+                Category = "general"
             };
-
             await _cosmos.InsertAsync(
                 customer,
-                customer.id);
+                customer.Id);
 
             Debug.WriteLine("Inserted successfully!");
         }

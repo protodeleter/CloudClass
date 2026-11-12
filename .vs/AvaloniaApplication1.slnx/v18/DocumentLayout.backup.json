@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|solutionrelative:services\\cosmosdbclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|c:\\users\\pavel.n\\source\\repos\\avaloniaapplication1\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|c:\\users\\pavel.n\\source\\repos\\avaloniaapplication1\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     }
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 310,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -32,9 +36,23 @@
               "RelativeDocumentMoniker": "Services\\CosmosDbClient.cs",
               "ToolTip": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Services\\CosmosDbClient.cs",
               "RelativeToolTip": "Services\\CosmosDbClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T13:42:48.967Z",
+              "WhenOpened": "2026-11-12T14:41:52.739Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T14:39:55.258Z",
               "EditorCaption": "",
               "OwnerCaption": "%2"
             },
@@ -46,7 +64,7 @@
               "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
               "ToolTip": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Views\\MainWindow.axaml.cs",
               "RelativeToolTip": "Views\\MainWindow.axaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAswCEAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswCYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-12T10:20:06.282Z",
               "EditorCaption": "",
@@ -54,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Views\\MainWindow.axaml",
               "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
@@ -62,7 +80,6 @@
               "RelativeToolTip": "Views\\MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-11-12T09:59:51.704Z",
-              "EditorCaption": "",
               "OwnerCaption": "%2"
             }
           ]
