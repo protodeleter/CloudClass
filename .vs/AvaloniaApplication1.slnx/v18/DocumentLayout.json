@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|c:\\users\\pavel.n\\source\\repos\\avaloniaapplication1\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|c:\\users\\pavel.n\\source\\repos\\avaloniaapplication1\\services\\cosmosdbclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|solutionrelative:services\\cosmosdbclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|c:\\users\\pavel.n\\source\\repos\\avaloniaapplication1\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{4478C37E-E173-8721-0BB7-2A97BAB6EC35}|AvaloniaApplication1.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 310,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CosmosDbClient.cs",
+              "DocumentMoniker": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Services\\CosmosDbClient.cs",
+              "RelativeDocumentMoniker": "Services\\CosmosDbClient.cs",
+              "ToolTip": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Services\\CosmosDbClient.cs",
+              "RelativeToolTip": "Services\\CosmosDbClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T13:42:48.967Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T10:20:06.282Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-12T09:59:51.704Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 89,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
