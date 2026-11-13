@@ -3045,32 +3045,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pavel.n\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/pavelnasonov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1.csproj",
+      "projectUniqueName": "/Users/pavelnasonov/RiderProjects/CloudClass/AvaloniaApplication1.csproj",
       "projectName": "AvaloniaApplication1",
-      "projectPath": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1.csproj",
-      "packagesPath": "C:\\Users\\pavel.n\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pavel.n\\source\\repos\\AvaloniaApplication1\\obj\\",
+      "projectPath": "/Users/pavelnasonov/RiderProjects/CloudClass/AvaloniaApplication1.csproj",
+      "packagesPath": "/Users/pavelnasonov/.nuget/packages/",
+      "outputPath": "/Users/pavelnasonov/RiderProjects/CloudClass/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\pavel.n\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/pavelnasonov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3149,12 +3142,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[10.0.15, 10.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[10.0.15, 10.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[10.0.15, 10.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/11.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

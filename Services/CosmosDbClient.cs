@@ -1,6 +1,6 @@
-﻿
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Azure.ResourceManager.Models;
 using Microsoft.Azure.Cosmos;
 
 namespace AvaloniaApplication1.Services;
@@ -28,9 +28,15 @@ public sealed class CosmosDbClient : IDisposable
                 ConnectionMode = ConnectionMode.Gateway
             });
 
+        _client.CreateDatabaseIfNotExistsAsync()
         _container = _client.GetContainer(
             databaseName,
             containerName);
+    }
+
+    public CosmosDbClient CreateDb( string databaseName, string containerName )
+    {
+        
     }
 
     // Verify that the database exists and is accessible
