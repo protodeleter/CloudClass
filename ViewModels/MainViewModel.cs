@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using AvaloniaApplication1.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -20,12 +21,16 @@ public partial class MainViewModel : ViewModelBase
     
     
     [RelayCommand]
-    private void ShowValues()
+    private async Task ShowValues()
     {
+
+        if (_cosmos != null)
+        {
+            await _cosmos.CreateDb(DatabaseName!, ContainerName!);
+        }
         
-        _cosmos.
-        Console.WriteLine($"Database: {DatabaseName}");
-        Console.WriteLine($"Container: {ContainerName}");
+        // Console.WriteLine($"Database: {DatabaseName}");
+        // Console.WriteLine($"Container: {ContainerName}");
     }
     
 }

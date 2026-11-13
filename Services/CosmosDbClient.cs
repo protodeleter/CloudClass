@@ -28,15 +28,14 @@ public sealed class CosmosDbClient : IDisposable
                 ConnectionMode = ConnectionMode.Gateway
             });
 
-        _client.CreateDatabaseIfNotExistsAsync()
         _container = _client.GetContainer(
             databaseName,
             containerName);
     }
 
-    public CosmosDbClient CreateDb( string databaseName, string containerName )
-    {
-        
+    public async Task CreateDb( string databaseName, string containerName )
+    { 
+        await _client.CreateDatabaseIfNotExistsAsync(databaseName);
     }
 
     // Verify that the database exists and is accessible
