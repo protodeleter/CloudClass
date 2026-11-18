@@ -1,0 +1,16 @@
+# Per-computer development certificate and settings (do not commit)
+.env
+.env.*
+docker/cosmos/certs/
+
+# Local bind-mounted data, if you ever switch away from the named volume
+docker/cosmos/data/
+
+# .NET / Visual Studio / Rider artifacts
+**/bin/
+**/obj/
+.vs/
+.idea/
+*.user
+*.suo
+.DS_Store
