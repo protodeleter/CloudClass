@@ -22,18 +22,13 @@
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
         ColumnSpacing="12"
-        >
-
-        
-        
-        
+        >       
         <TabbedPage 
                     TabPlacement="Auto"
                     MinWidth="500"
                     Padding="0 50 0 0"
                     MinHeight="500"
                     >
-
             <ContentPage 
                 Header="Home"
                 Margin="0 50 0 0">
@@ -47,18 +42,14 @@
                              PlaceholderText="Container name" />
         
                     <Button Content="Show Values"
-                            Command="{Binding ShowValuesCommand}" />
+                            Command="{Binding ShowValuesCommand}" 
+                            />
                     </StackPanel>
             </ContentPage>
             <ContentPage 
                 Header="Create Container"
                 Margin="0 50 0 0"></ContentPage>
             
-            
         </TabbedPage>
-        
-
     </Grid>
-    
-        
 </Window>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Threading.Tasks;
 using AvaloniaApplication1.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -19,16 +19,24 @@ public partial class MainViewModel : ViewModelBase
     [ObservableProperty]
     public partial string ContainerName { get; set; }
     
-    
+    public MainViewModel(CosmosDbClient cosmos)
+    {
+
+        _cosmos = cosmos;
+
+    }
     [RelayCommand]
     private async Task ShowValues()
     {
 
-        if (_cosmos != null)
+
+        if (_cosmos != null &&
+          !string.IsNullOrWhiteSpace(DatabaseName) &&
+          !string.IsNullOrWhiteSpace(ContainerName))
         {
-            await _cosmos.CreateDb(DatabaseName!, ContainerName!);
+            await _cosmos.CreateDbAsync(DatabaseName, ContainerName);
         }
-        
+
         // Console.WriteLine($"Database: {DatabaseName}");
         // Console.WriteLine($"Container: {ContainerName}");
     }
