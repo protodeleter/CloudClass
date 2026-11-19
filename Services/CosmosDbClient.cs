@@ -1,8 +1,8 @@
 ﻿
-using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
 using Microsoft.Azure.Cosmos;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace AvaloniaApplication1.Services;
 
@@ -16,13 +16,25 @@ public sealed class CosmosDbClient : IDisposable
 
     public CosmosDbClient()
     {
+
+        var options = new CosmosClientOptions
+        {
+            ConnectionMode = ConnectionMode.Gateway
+        };
+
+#if DEBUG
+        options.HttpClientFactory = () =>
+            new HttpClient(new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback =
+                    HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+            });
+#endif
+
         _client = new CosmosClient(
             Endpoint,
             Key,
-            new CosmosClientOptions
-            {
-                ConnectionMode = ConnectionMode.Gateway
-            });
+            options);
     }
 
     // Create database and container if they don't exist
@@ -31,17 +43,15 @@ public sealed class CosmosDbClient : IDisposable
         string containerName,
         string partitionKeyPath = "/id")
     {
-
-
-
+        // Create database if it doesn't exist
         DatabaseResponse response =
             await _client.CreateDatabaseIfNotExistsAsync(
                 databaseName);
 
-        Debug.Write(response);
-
+        // Get database reference
         Database database = response.Database;
 
+        // Create container if it doesn't exist
         await database.CreateContainerIfNotExistsAsync(
             id: containerName,
             partitionKeyPath: partitionKeyPath);
