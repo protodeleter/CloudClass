@@ -16,7 +16,7 @@ public sealed class CosmosDbClient : IDisposable
 
     public CosmosDbClient()
     {
-
+// test
         var options = new CosmosClientOptions
         {
             ConnectionMode = ConnectionMode.Gateway
