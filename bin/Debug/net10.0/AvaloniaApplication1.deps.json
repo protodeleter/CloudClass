@@ -91,19 +91,19 @@
           "runtimes/win-arm64/native/av_libglesv2.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "2.1.1.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-arm64/native/av_libglesv2.dll"
           },
           "runtimes/win-x64/native/av_libglesv2.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.1.1.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x64/native/av_libglesv2.dll"
           },
           "runtimes/win-x86/native/av_libglesv2.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "2.1.1.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x86/native/av_libglesv2.dll"
           }
         }
@@ -518,31 +518,31 @@
           "runtimes/win-x64/native/Cosmos.CRTCompat.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.0.0.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x64/native/Cosmos.CRTCompat.dll"
           },
           "runtimes/win-x64/native/Microsoft.Azure.Cosmos.ServiceInterop.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.14.0.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x64/native/Microsoft.Azure.Cosmos.ServiceInterop.dll"
           },
           "runtimes/win-x64/native/msvcp140.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "14.44.35219.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x64/native/msvcp140.dll"
           },
           "runtimes/win-x64/native/vcruntime140.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "14.44.35219.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x64/native/vcruntime140.dll"
           },
           "runtimes/win-x64/native/vcruntime140_1.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "14.44.35219.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win-x64/native/vcruntime140_1.dll"
           }
         }
@@ -576,13 +576,13 @@
           "runtimes/win7-x64/native/Cosmos.CRTCompat.dll": {
             "rid": "win7-x64",
             "assetType": "native",
-            "fileVersion": "2.0.0.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win7-x64/native/Cosmos.CRTCompat.dll"
           },
           "runtimes/win7-x64/native/Microsoft.Azure.Documents.ServiceInterop.dll": {
             "rid": "win7-x64",
             "assetType": "native",
-            "fileVersion": "2.11.2.0",
+            "fileVersion": "0.0.0.0",
             "localPath": "runtimes/win7-x64/native/Microsoft.Azure.Documents.ServiceInterop.dll"
           }
         }
