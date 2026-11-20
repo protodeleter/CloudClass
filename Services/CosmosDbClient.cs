@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.Azure.Cosmos;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -69,6 +70,22 @@ public sealed class CosmosDbClient : IDisposable
         await container.ReadContainerAsync();
     }
 
+    public async Task<List<string>> GetDataBasesAsync()
+    {
+        FeedIterator<DatabaseProperties> iterator = _client.GetDatabaseQueryIterator<DatabaseProperties>();
+        List<string> databaseIds = new List<string>();
+
+        while ( iterator.HasMoreResults )
+        {
+            FeedResponse<DatabaseProperties> response = await iterator.ReadNextAsync();
+            foreach (DatabaseProperties db in response)
+            {
+                databaseIds.Add(db.Id);
+            }
+        }
+
+        return databaseIds;
+    }
     // Insert a document
     public async Task InsertAsync<T>(
         string databaseName,

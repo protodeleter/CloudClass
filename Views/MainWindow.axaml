@@ -1,55 +1,59 @@
 ﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:AvaloniaApplication1.ViewModels"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication1.Views.MainWindow"
-        x:DataType="vm:MainViewModel"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="AvaloniaApplication1"
-        
-        >
+        Title="Cosmos DB Manager"
+        Width="600"
+        Height="400">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainViewModel />
-    </Design.DataContext>
+    <StackPanel Spacing="12"
+                Margin="20">
 
         
-    <Grid 
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center"
-        ColumnSpacing="12"
-        >       
-        <TabbedPage 
-                    TabPlacement="Auto"
-                    MinWidth="500"
-                    Padding="0 50 0 0"
-                    MinHeight="500"
-                    >
-            <ContentPage 
-                Header="Home"
-                Margin="0 50 0 0">
-                
-                <StackPanel Spacing="15">
-                    <TextBox Text="{Binding DatabaseName, Mode=TwoWay}"
-                             PlaceholderText="DB name" 
-                             />
+        <TabControl Margin="5">
+            <TabItem Header="Db Manager">
+                <StackPanel>
+                    
+                <TextBlock Text="Database Manager"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Margin="0 0 0 15"
+                           />
 
-                    <TextBox Text="{Binding ContainerName, Mode=TwoWay}"
-                             PlaceholderText="Container name" />
-        
-                    <Button Content="Show Values"
-                            Command="{Binding ShowValuesCommand}" 
-                            />
-                    </StackPanel>
-            </ContentPage>
-            <ContentPage 
-                Header="Create Container"
-                Margin="0 50 0 0"></ContentPage>
+                <TextBox x:Name="DatabaseNameTextBox"
+                         PlaceholderText="Database Name"
+                         Margin="0 0 0 15"
+                         />
+
+                <TextBox x:Name="ContainerNameTextBox"
+                         PlaceholderText="Container Name"
+                         Margin="0 0 0 15"
+                         />
+
+                <Button x:Name="CreateButton"
+                        Content="Create Database"
+                        Click="CreateDatabase_Click"/>
+
+                <TextBlock x:Name="StatusText"
+                           Text="Ready"
+                           TextWrapping="Wrap"/>
+                </StackPanel>
+
+            </TabItem>
             
-        </TabbedPage>
-    </Grid>
+            <TabItem Header="All databases">
+                <StackPanel>
+                    
+                    <ListBox x:Name="DatabasesList"
+                             Height="250" 
+                             />
+                    
+                    <TextBlock Margin="5">This is tab 2 content</TextBlock>
+                
+                </StackPanel>
+                
+            </TabItem>
+        </TabControl>
+        
+
+    </StackPanel>
 </Window>
